@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class quicksort{
+
+
+    public int[] sort(int[]a){
+	if (a.length < = 1){
+	    return a;
+	}else{
+	    int[]lower = new int[a.length/2];
+
+	}
+    }
+}
