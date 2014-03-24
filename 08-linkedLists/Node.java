@@ -6,6 +6,11 @@ public class Node{
     	data = d;
     	next = null;
     }
+    
+    public Node(){
+        data = null;
+        next = null;
+    }
 
     public void setData(String d) {
     	data = d;
