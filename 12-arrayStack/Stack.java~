@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Stack {
+
+    private String[]stack;
+    private int index;
+
+    public Stack(){
+	stack = new String[10];
+	index = 0;
+    }
+
+    public void push(String s){
+	if(index < stack.length){
+	    stack[index] = s;
+	    index++;
+	}else{
+	    stack = Arrays.copyOf(stack,stack.length*2);
+	    push(strings);
+	}
+    }
+
+    public String peek(){
+	return stack[index];
+    }
+
+    public String pop(){
+	String temp = stack [index];
+	stack[index] = null;
+	index --;
+	return temp;
+    }
+}
